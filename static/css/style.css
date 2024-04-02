@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap');
+
+.containerr{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+}
+body {
+    background-color: #2f74cb;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background: #2169a3;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
+.head_ul {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head_li {
+    display: inline-block;
+    list-style: none;
+    /* border: 1px solid black; */
+    padding: 15px;
+}
+
+.head_li:hover {
+    background: #408fce;
+}
+
+.head_a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #cbcbcb;
+    font-family: sans-serif;
+}
+
+
+/* sidebar */
+.bar_ul {
+    height: 100%;
+    max-width: 200px;
+    padding: 0;
+    background: #2169a3;
+}
+
+.bar_li {
+    list-style: none;
+    padding: 10px;
+}
+
+.bar_li:hover {
+    background: #408fce;
+}
+
+.bar_a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #cbcbcb;
+    font-family: sans-serif;
+}
+.about{
+    max-width: 200px;
+    /*background: #408fce;*/
+
+
+}
+.img{
+    margin: 10px;
+    border-radius: 15px;
+}
+.h5{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+.h4{
+    margin-top: 5px;
+    font-family: sans-serif;
+    color: #fff;
+}
+.abb{
+    border-bottom: 1px solid #2169a3;
+}
+.mainDiv{
+    display: inline-block;
+    width: 15%;
+    margin-top: 130px;
+
+}
+.content{
+
+    /* background: rgb(25, 0, 255); */
+    width: 80%;
+    margin-top: 90px;
+    overflow-y: scroll;
+    height: 700px;
+    scrollbar-color:#2f74cb #3f3f97;
+    /* opacity: 0.5; */
+    color: white;
+    padding: 30px;
+}
+
+.text{
+    font-size: 20px;
+}
+.title_block{
+    border-bottom: 1.5px solid #fff;
+}
+.y22{
+    font-family: 'Merienda', cursive;
+    color: #ffffff;
+    list-style: none;
+    float: left;
+    
+}
+
+.h11{
+    margin-left: 7%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+span{
+    color: red;
+}

@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>{% block title %}{% endblock %}</title>
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-secondary">
+   <div class="header y22">
+      <h1 class="h11"><span>B</span>rain<span>C</span>enter</h1>
+      <h3 class="h11 y22">Сайт о программировании</h3>
+      <ul class="head_ul">
+         <li class="y22"></li>
+         <a href="{% url 'core' %}" class="head_a"><li class="head_li">Главная страница</li></a>
+         <a href="{% url 'python' %}" class="head_a"><li class="head_li">Python</li></a>
+         <a href="{% url 'java' %}" class="head_a"><li class="head_li">Java</li></a>
+         <a href="{% url 'cisharp' %}" class="head_a"><li class="head_li">C#</li></a>
+         <a href="{% url 'javascript' %}" class="head_a"><li class="head_li">JavaScript</li></a>
+         <a href="{% url 'kotlin' %}" class="head_a"><li class="head_li">Kotlin</li></a>
+         <a href="{% url 'html' %}" class="head_a"><li class="head_li">HTML</li></a>
+         <a href="{% url 'css' %}" class="head_a"><li class="head_li">CSS</li></a>
+
+
+      </ul>
+   </div>
+
+   <div class="containerr bg-secondary">
+      <div class="mainDiv">
+         <div class="sidebar">
+            
+
+             <div class="about">
+               <div class="abb">
+                  <img class="img"
+                     src="{% static 'img/user_photo.jpg' %}"
+                     width="180px" height="180px" alt="" style="object-fit: cover">
+                  <div class="ab_us text-light">
+                     <center>
+                        <h5 class="h5">Fullstack разработчик</h5>
+                        <h4 class="h4">Медисов Адилет</h4>
+                     </center>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+      <div class="content">
+
+         {% block content %}
+         {% endblock %}
+       
+      </div>
+<!--      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias at, cupiditate eligendi et exercitationem fuga harum id ipsum laudantium magni, minus nemo nesciunt nisi numquam odio officia placeat quod!</h1>-->
+   </div>
+
+   <script src="{% static 'js/app.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Java{% endblock %}
+{% block content %}
+{% for el in jav %}
+<div class="content_1">
+
+    <div class="title_block">
+        <h1 class="title">{{ el.title }}</h1>
+        <p class="text">{{ el.text }}</div>
+        <p class="text">{{ el.date }}</div>
+{% endfor %}
+    </div>
+{% endblock %}
