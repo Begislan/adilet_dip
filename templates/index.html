@@ -3,6 +3,132 @@
 {% block title %}Главная страница{% endblock %}
 
 {% block content %}
-<h1>Страница о нас!</h1>
+
+    <div class="blog">
+
+
+        <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                        aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                        class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="static/img/python.jpg" class="bd-placeholder-img" width="100%" height="100%">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Python программалоо тили</h1>
+                            {#            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>#}
+                            <p><a class="btn btn-lg btn-primary" href="{% url 'python' %}">Толук окуу..</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="static/img/programm.png" class="bd-placeholder-img" width="100%" height="100%">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Ар бир чыкылдатуу жаңы мүмкүнчүлүктөрдү ачкан программалоо дүйнөсүнө кош келиниздер</h1>
+                            {#            <p>Some representative placeholder content for the second slide of the carousel.</p>#}
+                            {#            <p><a class="btn btn-lg btn-primary" href="#">Толук окуу..</a></p>#}
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/img/JavaScript-2048x1024.jpg" class="bd-placeholder-img" width="100%"
+                         height="100%">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            {#            <h1>One more for good measure.</h1>#}
+                            {#            <p>Some representative placeholder content for the third slide of this carousel.</p>#}
+                            <p><a class="btn btn-lg btn-primary" href="{% url 'javascript' %}">Толук окуу..</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="container marketing">
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">JavaScript деген эмне?</h2>
+                    <p class="lead">JavaScript – бул веб-баракчада татаал нерселерди жасоого мүмкүндүк берүүчү тил –
+                        веб-баракчада аны статикалык түрдө көрсөтүүгө караганда көбүрөөк нерсе болгондо – мезгил-мезгили
+                        менен жаңыртылган мазмунду, интерактивдүү карталарды көрсөтүү, же 2D/3D графикасын жандандыруу
+                        же видеону жылдыруу оюнчуда ж.б. — JavaScript болушу мүмкүн эмес экенине шектенбесеңиз болот.
+                        Бул стандарттык веб-технологиялардын катмар тортунун үчүнчү катмары, алардын экөөсү ( HTML жана
+                        CSS ) биз окуу куралынын башка бөлүктөрүндө майда-чүйдөсүнө чейин карадык.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                         height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Python деген эмне: ал эмне үчүн жакшы, кайда пайдалуу
+                        жана аны кантип үйрөнүү керек</h2>
+                    <p class="lead">Python — это язык программирования, который широко используется в
+                        интернет-приложениях, разработке программного обеспечения, науке о данных и машинном обучении
+                        (ML). Разработчики используют Python, потому что он эффективен, прост в изучении и работает на
+                        разных платформах. Программы на языке Python можно скачать бесплатно, они совместимы со всеми
+                        типами систем и повышают скорость разработки.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="https://ioflood.com/blog/wp-content/uploads/2023/09/Collage-of-Python-programming-aspects-syntax-libraries-Python-symbols-logo.jpg"
+                         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                         height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Котлин программалоо тили: бул эмне, ал кайда
+                        колдонулат жана эмне үчүн иштеп чыгуучулар аны жакшы көрүшөт</h2>
+                    <p class="lead">Kotlin JetBrains тарабынан түзүлгөн программалоо тили болуп саналат. Ал 2011-жылы
+                        Java тилин алмаштыруу үчүн иштелип чыккан, аны компания өтө кеңири деп эсептеген. Жаңы тил
+                        мурункусуна караганда 40% компакт болгон, бул негизги JetBrains продуктусу - IntelliJ IDEA иштеп
+                        чыгуу чөйрөсүндө ишти тездетүүгө жардам берди. Ошол эле учурда, Котлин Java менен толук шайкеш
+                        келет, анткени ал өзүнүн виртуалдык машинасында (JVM) иштейт.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuJMXRAH_5P0Kqsni57YePflJD1ZFJWV7F1NojKBNRiw&s"
+                         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                         height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+
+
+    </div>
 
 {% endblock %}
