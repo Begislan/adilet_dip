@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap');
 
 .containerr{
-    max-width: 90%;
+    /*max-width: 90%;*/
     margin: auto;
-    display: flex;
+    display: flex;]
+
+    /*background-color: aqua;*/
 }
 body {
-    background-color: #2f74cb;
+    background-image: url("https://i.gifer.com/1pX9.gif");
     padding: 0;
     margin: 0;
 }
 
 .header {
-    background: #2169a3;
+    background: #0a0a0a;
     position: fixed;
     width: 100%;
     overflow: hidden;
@@ -68,6 +70,7 @@ body {
     font-family: sans-serif;
 }
 .about{
+    margin-left: 35px;
     max-width: 200px;
     /*background: #408fce;*/
 
@@ -104,7 +107,7 @@ body {
     margin-top: 90px;
     overflow-y: scroll;
     height: 700px;
-    scrollbar-color:#2f74cb #3f3f97;
+    scrollbar-color: #474849 #1d1d21;
     /* opacity: 0.5; */
     color: white;
     padding: 30px;
@@ -132,3 +135,15 @@ body {
 span{
     color: red;
 }
+.full_text{
+    font-size: 26px;
+}
+a{
+    text-decoration: none;
+}
+.title_a{
+    text-decoration: none;
+    color: white;
+}
+
+

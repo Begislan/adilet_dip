@@ -5,8 +5,8 @@
 <div class="content_1">
 
     <div class="title_block">
-        <h1 class="title">{{ el.title }}</h1>
-        <p class="text">{{ el.text }}</div>
+        <h1 class="title"><a class="title_a" href="{% url 'java_detail' el.id %}">{{ el.title }}</a></h1>
+
         <p class="text">{{ el.date }}</div>
 {% endfor %}
     </div>
