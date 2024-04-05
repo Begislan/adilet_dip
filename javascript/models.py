@@ -1,7 +1,5 @@
 from django.db import models
 
-from django.db import models
-
 # Create your models here.
 class JavaScript(models.Model):
     title = models.CharField(max_length=50, verbose_name="Название темы")
