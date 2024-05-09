@@ -40,3 +40,6 @@ def DeleteStudyView(request, pk):
         data_d.delete()
         return redirect('study_list')
     return render(request, 'study/delete_study.html', locals())
+
+def cource(request):
+    return render(request, 'cource.html')

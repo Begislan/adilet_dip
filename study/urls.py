@@ -5,5 +5,6 @@ urlpatterns = [
     path('<int:pk>/', study_detail, name='study_detail'),
     path('create/', CreateStudy.as_view(), name='create'),
     path('edit/<int:pk>/', UpdateStudy.as_view(), name='update'),
-    path('delete/<int:pk>/', DeleteStudyView, name='delete')
+    path('delete/<int:pk>/', DeleteStudyView, name='delete'),
+    path('cource/', cource, name='cource'),
 ]
