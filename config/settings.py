@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'kotlin',
     'HTML',
     'CSS',
+    'study',
 ]
 
 MIDDLEWARE = [

@@ -13,4 +13,5 @@ urlpatterns = [
     path('kotlin/', include("kotlin.urls")),
     path('html/', include("HTML.urls")),
     path('css/', include("CSS.urls")),
+    path('study/', include("study.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

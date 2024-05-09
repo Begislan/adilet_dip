@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Studyes{% endblock %}
+{% block content %}
+    <h1 class="text-info">Ученик</h1>
+
+    <div class="content_1">
+        <div class="title_block">
+            <h1 class="title">ФИО: {{ data_detail.name }}</h1>
+            <p class="text">телефон: {{ data_detail.phone }}
+        <p class="text">школа: {{ data_detail.school }}
+        <p class="text">адрес: {{ data_detail.address }}
+        <p class="text">почта: {{ data_detail.email }}
+        <p class="text">деньги: {{ data_detail.price }}
+        </div>
+        <a href="{% url 'update' data_detail.pk %}"><button class="btn btn-info">Изменить</button></a>
+        <a href="{% url 'delete' data_detail.pk %}"><button class="btn btn-danger">Удалить</button></a>
+    </div>
+{% endblock %}

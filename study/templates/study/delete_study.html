@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Studyes{% endblock %}
+{% block content %}
+    <h1 class="text-info">Удалить ученика</h1>
+    <form method="post">  <!-- Form for deletion confirmation -->
+        {% csrf_token %}  <!-- CSRF token for security -->
+        <button type="submit">Удалить</button>  <!-- Submit button to confirm deletion -->
+        <a href="{% url 'study_list' %}">Отмена</a>  <!-- Link to cancel deletion -->
+    </form>
+
+{% endblock %}

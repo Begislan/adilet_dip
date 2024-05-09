@@ -17,11 +17,10 @@
 
 <body>
    <div class="header y22">
-      <h1 class="h11"><span>B</span>rain<span>C</span>enter</h1>
+       <a href="{% url 'core' %}"><h1 class="h11"><span>B</span>rain<span>C</span>enter</h1></a>
       <h3 class="h11 y22">Сайт о программировании</h3>
       <ul class="head_ul">
          <li class="y22"></li>
-         <a href="{% url 'core' %}" class="head_a"><li class="head_li">Главная страница</li></a>
          <a href="{% url 'python' %}" class="head_a"><li class="head_li">Python</li></a>
          <a href="{% url 'java' %}" class="head_a"><li class="head_li">Java</li></a>
          <a href="{% url 'cisharp' %}" class="head_a"><li class="head_li">C#</li></a>
@@ -29,6 +28,7 @@
          <a href="{% url 'kotlin' %}" class="head_a"><li class="head_li">Kotlin</li></a>
          <a href="{% url 'html' %}" class="head_a"><li class="head_li">HTML</li></a>
          <a href="{% url 'css' %}" class="head_a"><li class="head_li">CSS</li></a>
+         <a href="{% url 'study_list' %}" class="head_a"><li style="background-color: yellow; color: black;"  class="head_li">Ученики</li></a>
 
 
       </ul>
@@ -42,12 +42,12 @@
              <div class="about">
                <div class="abb">
                   <img class="img"
-                     src="{% static 'img/user_photo.jpg' %}"
+                     src=""
                      width="180px" height="180px" alt="" style="object-fit: cover">
                   <div class="ab_us text-light">
                      <center>
                         <h5 class="h5">Fullstack разработчик</h5>
-                        <h4 class="h4">Мелисов Адилет</h4>
+                        <h4 class="h4"></h4>
                      </center>
                   </div>
                </div>

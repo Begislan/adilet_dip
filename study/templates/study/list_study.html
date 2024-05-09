@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Studyes{% endblock %}
+{% block content %}
+    <h1 class="text-info">Список ученики</h1>
+    <a href="{% url 'create' %}"><button class="btn btn-success">добавить в список</button></a>
+    {% for el in data %}
+        <div class="content_1">
+        <div class="title_block">
+            <h1 class="title"><a class="title_a" href="{% url 'study_detail' el.pk %}">{{ el.name }}</a></h1>
+            <p class="text">{{ el.age }}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

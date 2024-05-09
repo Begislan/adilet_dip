@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Studyes{% endblock %}
+{% block content %}
+    <h1 class="text-info">Изменить ученика</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Displays the form fields -->
+        <button type="submit">Изменить</button>  <!-- Submit button -->
+    </form>
+
+{% endblock %}
